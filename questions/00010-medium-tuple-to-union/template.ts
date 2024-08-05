@@ -1,1 +1,1 @@
-type TupleToUnion<T> = any
+type TupleToUnion<T> = T extends [...args: (infer R)[]] ? R : never
